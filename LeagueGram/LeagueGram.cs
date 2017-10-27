@@ -26,14 +26,6 @@ namespace LeagueGram
             return _chats[chatID];
         }
 
-        /* public Chat GetChat(Guid chatID)
-        {
-            if (_chats[chatID].chatStatus == ChatStatus.PrivateChat) return GetPrivateChat(chatID);
-            if (_chats[chatID].chatStatus == ChatStatus.Group) return GetGroup(chatID);
-            if (_chats[chatID].chatStatus == ChatStatus.Channel) return GetGroup(chatID);
-            return default(Chat);
-        } */
-
         public PrivateChat GetPrivateChat(Guid chatID)
         {
             return (PrivateChat) _chats[chatID];
